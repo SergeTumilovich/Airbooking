@@ -1,0 +1,7 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+/*Big Noodle Titling is a local font*/
+@font-face {
+  font-family: Big Noodle Titling;
+  src: url(../fonts/bignoodletitling.ttf);
+}
