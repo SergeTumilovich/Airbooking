@@ -16,7 +16,10 @@
       <header class="header">
         <ul class="header__menu">Menu</ul>
         <h1 class="header__title">Airbooking</h1>
-        <div class="header-search"></div><!--might be a form-->
+        <form method="post" action="https://echo.htmlacademy.ru" class="header-search">
+          <label class="header-search__icon fa-search" for="header-search"></label>
+          <input type="text" class="header-search__field" name="header-search">
+        </form>
       </header>
       <main>
         <section class="promo">
@@ -31,8 +34,23 @@
             </ul>
           </aside>
           <a class="promo-explore" href="#">Explore it</a>
-          <form class="promo-search-form" action="https://echo.htmlacademy.ru" method="post">
-            <!--still don't know what would be inside :( -->
+          <form class="promo-search" action="https://echo.htmlacademy.ru" method="post">
+            <div class="promo-search__section">
+              <label class="promo-search__label" for="checkin">Check in</label>
+              <input type="text" name="checkin" class="promo-search__input"></input>
+              <input type="month" class="promo-search__date"></input>
+            </div>
+            <div class="promo-search__section">
+              <label class="promo-search__label" for="checkout">Check out</label>
+              <input type="text" name="checkout" class="promo-search__input"></input>
+              <input type="month" class="promo-search__date"></input>
+            </div>
+            <div class="promo-search__section">
+              <label class="promo-search__label" for="guests">Guests</label>
+              <input type="text" name="guests" class="promo-search__input"></input>
+              <input type="month" class="promo-search__date"></input>
+            </div>
+            <button class="btn btn-promo-search" type="submit">Check Availability</button>
           </form>
         </section>
         <section class="rooms">
